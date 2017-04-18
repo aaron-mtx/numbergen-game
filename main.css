@@ -5,7 +5,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: #3498db;
+}
+
+h1 {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 300;
 }
 
 input[type="button"] {
