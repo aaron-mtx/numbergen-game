@@ -1,0 +1,54 @@
+body {
+  font-family: 'Source Sans Pro';
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+input[type="button"] {
+  border: 1px solid rgba(255,255,255,1);
+  background-color: transparent;
+  padding: 0.5em 1em;
+  color: rgba(255,255,255,1);
+  font-size: 1em;
+  margin: 0 1.5rem;
+  border-radius: 6px;
+  margin-top: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="text"] {
+  padding: 1em 4em 1em 1em;
+  font-weight: 300;
+  border: 0;
+  border-radius: 6px;
+}
+
+input[type="text"]:focus {
+  outline: 0;
+}
+
+input[type="button"]:hover {
+  border: 1px solid white;
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+}
