@@ -10,13 +10,23 @@
 
 <body>
 
+<div class="container">
 	<h1>Guess a number between 1 and 1000</h1>
-	<input type="text" id="numInput" placeholder="Guess a number">
+	<div class="wrapper">
+		<input type="text" id="numInput" placeholder="Guess a number"><br>
+		<button class="submit" onclick="guessingButton()">submit</button>
+		<button class="submit" onclick="revealNumber()">reveal answer</button>
+		<button class="submit" onclick="window.location.reload()">try again</button>
+	</div>
 
-	<input type="button" onclick="guessingButton()" value="submit">
+	<div class="output">
+		<p id="user-result">Result: </p>
+		<p id="num-gen-output">Answer: </p>
+	</div>
+</div>
 
 	<footer>
-		<p>A really random little game, for testing purposes.</p>
+		<h2>A really random little game, for testing purposes.</h2>
 	</footer>
 
 </body>

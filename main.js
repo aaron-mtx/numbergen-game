@@ -6,13 +6,16 @@ function guessingButton() {
   var usersGuess = document.getElementById('numInput').value;
 
   if (usersGuess == "") {
-    alert("Please enter a make a guess in the input");
+    document.getElementById('user-result').innerHTML = "Result: Please enter a value into the input";
   } else if (usersGuess == numGen) {
-    alert("You guessed the right number! " + attempts + " attempts.");
-    location.reload();
+    document.getElementById('user-result').innerHTML = "Result: You guessed the right number! " + attempts + " attempts.";
   } else if (usersGuess < numGen) {
-    alert("You guessed too small!");
+    document.getElementById('user-result').innerHTML = "Result: You guessed too small!";
   } else {
-    alert("You guessed too big!");
+    document.getElementById('user-result').innerHTML = "Result: You guessed too big!";
   }
+}
+
+function revealNumber() {
+  document.getElementById('num-gen-output').innerHTML = "The answer is: " + numGen;
 }
