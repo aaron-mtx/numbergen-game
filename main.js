@@ -9,6 +9,7 @@ function guessingButton() {
     alert("Please enter a make a guess in the input");
   } else if (usersGuess == numGen) {
     alert("You guessed the right number! " + attempts + " attempts.");
+    location.reload();
   } else if (usersGuess < numGen) {
     alert("You guessed too small!");
   } else {
